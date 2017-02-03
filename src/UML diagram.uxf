@@ -127,9 +127,11 @@ match number and pin
     </coordinates>
     <panel_attributes>Bank
 --
+Customer
+--
 find customers
 read customers
-Customer
+
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -156,7 +158,9 @@ Customer
     </coordinates>
     <panel_attributes>ATM
 --
-
+Customer
+Bank
+BankAccount
 -
 manage state
 select customer
@@ -367,5 +371,114 @@ style=wordwrap</panel_attributes>
     <panel_attributes>1
 style=wordwrap</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1750</x>
+      <y>620</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Account
+--
+- savings
+- checkings
+--
++ getters/setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1530</x>
+      <y>620</y>
+      <w>150</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+- accounts[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1980</x>
+      <y>480</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>checking
+--
+- money
+- date
+
+--
+- withdraw
+- deposit
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1670</x>
+      <y>660</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1540</x>
+      <y>440</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CreateFrame</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1980</x>
+      <y>760</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Savings
+--
+- money
+- date
+--
+- withdraw
+- deposit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1920</x>
+      <y>580</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;140.0;100.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1920</x>
+      <y>670</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0;140.0;90.0</additional_attributes>
   </element>
 </diagram>
