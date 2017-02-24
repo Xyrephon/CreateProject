@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Bank 
 {
-	private ArrayList<Account> accounts;
+	public static ArrayList<Account> accountArray;
 	
 	public Bank()
 	{
-		accounts = new ArrayList<Account>();
+		accountArray = new ArrayList<Account>();
 	}
 	
 	
